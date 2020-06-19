@@ -27,13 +27,24 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.forEach does an action to an item, but does not automatically return a new array.
+.map does an action to an item, and returns a new array based on given parameters
+
 2. Explain the difference between a callback and a higher order function.
+A higher-order function is a function that takes another function as an argument and returns a function to its callers.
+A callback function is a function that is passed to another function with the expectation that the other function will call it.
 
 3. What is closure?
+A closure is a function within a function. For REASONS.
 
 4. Describe the four rules of the 'this' keyword.
+One: If the new keyword is used when calling the function, this inside the function is a brand new object.
+Two: If apply, call, or bind are used to call a function, this inside the function is the object that is passed in as the argument.
+Three: If a function is called as a method this is the object that the function is a property of.
+Four: If this is invoked outside of a function, this is the global object. In a browser, it’s window.
 
 5. Why do we need super() in an extended class?
+You need super() to import the things from the class that is being extended.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -47,8 +58,8 @@ You are expected to be able to answer questions in these areas. Your responses c
 - [x] Add your team lead as collaborator on Github
 - [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
@@ -86,8 +97,8 @@ There are a few stretch problems found throughout the files, don't work on them 
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete after receiving your pull-request
 
 
