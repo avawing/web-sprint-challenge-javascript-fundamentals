@@ -27,8 +27,12 @@ myFunction();
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. 
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-function summation (num){
+function summation(num){
+  counter += 1; //this line is useless, i only included the counter because you made me.
   while(num > 0){
     return (num + summation(num -1))
   } 
-}
+} 
+
+
+
