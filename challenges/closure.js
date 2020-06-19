@@ -28,11 +28,19 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
 function summation(num){
-  counter += 1; //this line is useless, i only included the counter because you made me.
   while(num > 0){
     return (num + summation(num -1))
   } 
 } 
 
+function summationWithCounter(num){
+  let counter = 0;
+  let summedNum = 0;
+  while(counter < num){
+    counter += 1;
+    summedNum += counter;
+  }
+  return summedNum
+}
 
 
