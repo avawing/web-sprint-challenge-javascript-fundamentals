@@ -56,7 +56,7 @@ Find the total population from all the zoos using the .reduce() method.
 Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-let populationTotal = zooAnimals.map(item => item.population).reduce((function(accumulator, next){return accumulator+next}))
+let populationTotal = zooAnimals.map(item => item.population).reduce((accumulator, next)=>{return accumulator+next})
 
 
 console.log(populationTotal);
@@ -70,7 +70,7 @@ console.log(populationTotal);
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
-function higherOrder(a,b,cb){
+function consume(a,b,cb){
   return cb(a,b)
 }
 
@@ -80,11 +80,23 @@ function higherOrder(a,b,cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
+function add (a, b){
+  return a + b;
+}
+
+function multiply (a, b){
+  return a*b;
+}
+
+function greeting (a, b){
+  return `Hello ${a} ${b}, nice to meet you!`
+}
+
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+ console.log(consume(2, 2, add)); // 4
+ console.log(consume(10, 16, multiply)); // 160
+ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
